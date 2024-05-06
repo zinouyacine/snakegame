@@ -1,0 +1,112 @@
+
+
+        body {
+            text-align: center;
+            padding-top: 50px;
+            position: relative;
+        }
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+      
+            background-image: url('../img/snakegame.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+       
+        .sound-icon {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        canvas {
+            border: 30px solid gray;
+            margin: 0 auto;
+            background-color: #ddd;
+            display: none;
+        }
+        button {
+            font-size: 24px;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #3773e0;
+            color: rgb(255, 251, 251);
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input[type="text"], input[type="password"] {
+            font-size: 20px;
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+        .login-container {
+            border: 3px solid rgb(223, 85, 21);
+            display: inline-block;
+            padding: 30px 40px;
+            border-radius: 30px; /* Adjusted to make the corners rounded but more square-like */
+            background: rgba(255, 248, 248, 0.8);
+            box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5); /* Optional shadow for better visibility */
+        }
+        .centered-container {
+            position: relative;
+        }
+
+        .help-container {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            background-color: rgba(19, 16, 190, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            color: rgb(238, 238, 238);
+        }
+        .help-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .key-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .key {
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        .key-info p {
+            margin: 0;
+            font-size: 14px;
+        }
+   
+    /* Styles pour le bouton de lecture de la musique */
+    .play-music-button button {
+        font-size: 16px; /* Taille de la police */
+        padding: 5px 10px; /* Espacement intérieur du bouton */
+        background-color: red; /* Couleur de fond */
+        color: white; /* Couleur du texte */
+        border: none; /* Supprimer les bordures */
+        border-radius: 5px; /* Bordures arrondies */
+        cursor: pointer; /* Curseur pointer */
+    }
